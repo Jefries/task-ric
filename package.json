@@ -4,14 +4,16 @@
   "description": "vanilla project with tailwind css",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwind build -i src/style.css -o public/css/style.css",
+    "build-css": "NODE_ENV=production tailwindcss build -i src/style.css -o public/css/style.css --minify",
     "build": "npm run build-css",
-    "dev": "npm run build-css -- --watch"
+    "dev": "tailwindcss build -i src/style.css -o public/css/style.css --watch"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  },
   "devDependencies": {
-    "tailwindcss": "^3.4.17",
     "watch": "^1.0.2"
   }
 }
