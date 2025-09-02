@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task RIC by Jefri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-content">
+        <!-- HEADER -->
+        <header class="bg-white w-full">
+            <div class="w-full px-4 py-4 flex items-center justify-start">
+                <div class="text-4xl uppercase font-black text-black-600">
+                    An Invitation <br>
+                    to the Hidden
+                </div>
+            </div>
+        </header>
+        
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- HERO SECTION -->
+            <section class="hero mx-5">
+                <div class="hero-image"></div>
+                <div class="hero-description flex flex-col md:flex-row gap-4 py-4">
+                    <div class="basis-1/6 uppercase">
+                        <p class="text-sm font-bold">Curated selection of</p>
+                        <h3 class="text-lg font-black">Fine Spirits</h3>
+                    </div>
+                    <div class="basis-1/6 uppercase">
+                        <p class="text-sm font-bold">A hidden gem</p>
+                        <h3 class="text-lg font-black">7 nights / week</h3>
+                    </div>
+                    <div class="basis-1/2 max-w-[675px]">
+                        <p class="text-sm">
+                            Step into a place where time slows down and the night feels endless. 
+                            Our speakeasy offers a unique, intimate atmosphere, perfect for those seeking something more than the usual. 
+                            Come for the experience, stay for the vibe.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- PRODUCT LIST SECTION -->
+            <section class="mt-10 mb-20 px-4 flex flex-col items-center w-full justify-center text-center">
+                <div class="title-text">
+                    <h2 class="text-4xl font-black uppercase">Behind</h2>
+                    <h3 class="text-sm font-black mb-4">Closed Doors</h3>
+                    <div class="max-w-[630px]">
+                        <p class="text-sm">
+                            Our speakeasy offers an atmosphere that’s both sleek and relaxed, perfect for those who appreciate the finer things in life. 
+                            Whether you’re here for a quiet drink or to linger into the night, every moment feels exclusive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image-card-section py-8">
+                    <div class="image-card-wrapper grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="image-card group">
+                            <div class="image-container aspect-square overflow-hidden">
+                                <img src="assets/image-1.png" alt="Product Image 1" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </div>
+                        <div class="image-card group">
+                            <div class="image-container aspect-square overflow-hidden">
+                                <img src="assets/image-2.png" alt="Product Image 2" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </div>
+                        <div class="image-card group">
+                            <div class="image-container aspect-square overflow-hidden">
+                                <img src="assets/image-3.png" alt="Product Image 3" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </div>
+                        <div class="image-card group">
+                            <div class="image-container aspect-square overflow-hidden">
+                                <img src="assets/image-4.png" alt="Product Image 4" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </div>
+                        <div class="image-card group">
+                            <div class="image-container aspect-square overflow-hidden">
+                                <img src="assets/image-5.png" alt="Product Image 5" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </div>
+                        <div class="image-card group">
+                            <div class="image-container aspect-square overflow-hidden">
+                                <img src="assets/image-6.png" alt="Product Image 6" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bg-black px-6 py-2 text-white text-sm font-normal hover:scale-110 transition-transform duration-300">
+                    GUESTLIST
+                </button>
+            </section>
+        </main>
+        <!-- END OF MAIN CONTENT -->
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden items-center justify-center z-50 scale-100 md:scale-150">
+        <div class="relative max-w-4xl mx-auto p-4">
+            <button onclick="closeModal()" class="absolute top-[1rem] right-[2rem] text-white text-4xl font-thin cursor-pointer z-10">&times;</button>
+            <img id="modalImage" src="" alt="Large preview" class="max-h-[60vh] max-w-full ">
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

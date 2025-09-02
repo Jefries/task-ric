@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*========================== CUSTOM STYLE ==================================*/
+
+.hero-image {
+    background-image: url('../assets/hero-banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+
+@media (min-width: 1520px) {
+  .container-content {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

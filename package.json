@@ -1,0 +1,17 @@
+{
+  "name": "task-ric",
+  "version": "1.0.0",
+  "description": "vanilla project with tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwind build -i src/style.css -o public/css/style.css",
+    "build": "npm run build-css",
+    "dev": "npm run build-css -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "watch": "^1.0.2"
+  }
+}
